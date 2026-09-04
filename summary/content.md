@@ -1,27 +1,28 @@
 # Imamuddin Al Mustaqim
 
-> Lulusan Informatika — IPK 3.76 • Web Security • Backend PHP-MySQL • Linux (RCHSA)
+> Lulusan Informatika — IPK 3.76 • Administrasi Sistem Linux • Web & Database • Dukungan IT
 > 📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalimantan Selatan
 > ✉️ xeamam.hsu@gmail.com
 
 ## Tentang
 
-Lulusan Informatika dengan minat di **Web Security** dan **Back-end Programming**.
-Terbiasa *reconnaissance*, *web penetration testing*, dan *vulnerability assessment* via responsible disclosure ke Gov CSIRT.
+Lulusan **Informatika (IPK 3.76)** yang siap terjun ke dunia kerja IT: terbiasa mengelola
+**server Linux**, **website & database (PHP-MySQL)**, serta **dukungan teknis dan dokumentasi**.
+Memiliki minat khusus di keamanan web dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.
 
 - Pendidikan: S1 Informatika, IPK 3.76
-- Fokus: Linux Server, PHP-MySQL, SQL, Django (belajar)
-- Disclosure: BSSN, Komdigi, Polri, PU, Kemnaker, Kemendikdasmen, Kebumen, BPS, Baliprov
-- Binus Bug Bounty: 3 temuan High sedang diproses
+- Kompetensi utama: administrasi Linux (bersertifikat RCHSA), pengelolaan web & database, SQL, troubleshooting dasar
+- Nilai tambah: pemahaman pengujian keamanan web (OWASP) + responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)
+- Kesiapan: cepat belajar teknologi baru — saat ini mendalami Python/Django; bersedia remote / hybrid
 
-## Skills
+## Kemampuan
 
-- Web Security: Recon, Pentest, VA, OWASP Top 10, Burp Suite
-- Linux: RCHSA, Bash, SSH, LAMP
-- Backend: PHP-MySQL, SQL, REST dasar, Django (belajar), HTML/CSS
-- Lainnya: Laporan kerentanan, Markdown docs, Git & GitHub
+- Administrasi Sistem: Linux Server (RCHSA), Bash, SSH & permission, LAMP/hosting, troubleshooting dasar
+- Web & Database: PHP-MySQL, SQL, HTML/CSS, REST dasar, Django (dipelajari)
+- Dukungan IT & Kerja Tim: dokumentasi teknis, Markdown, Git & GitHub, laporan & komunikasi
+- Keamanan Web (minat khusus): OWASP dasar, vulnerability assessment, Burp Suite dasar
 
-## Hall of Fame
+## Penghargaan & Kontribusi
 
 | Instansi | Status | Keterangan |
 |---|---|---|
@@ -36,7 +37,7 @@ Terbiasa *reconnaissance*, *web penetration testing*, dan *vulnerability assessm
 | Baliprov | Dilaporkan | Responsible disclosure |
 | Binus Bug Bounty | 3 High diproses | Bounty belum beruntung |
 
-## Temuan (ringkas, tanpa payload)
+## Pengalaman Keamanan Web (ringkas, fokus perbaikan)
 
 - **RCE via File Upload** — mitigasi: whitelist MIME, rename, luar webroot
 - **XSS** — mitigasi: output encoding, CSP
@@ -61,4 +62,4 @@ Dummy dulu, ganti file di `certs/`:
 - Email: xeamam.hsu@gmail.com
 
 ---
-*Edit file ini, lalu jalankan `python build.py` untuk regenerate `index.html`.*
+*Siap magang MagangHub Batch 2 2026: Staff IT / IT Support / System & Network Administrator / Web Administrator / QA.*
