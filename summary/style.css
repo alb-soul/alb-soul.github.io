@@ -1,0 +1,111 @@
+:root{
+  --bg:#FAF6EF;
+  --card:#FFFDF7;
+  --ink:#2B2620;
+  --muted:#6F6558;
+  --line:#E7DCC6;
+  --accent:#7A5F2E;
+  --accent-bg:#F1E7D0;
+  --green:#2F6B3A;
+  --green-bg:#E6EFE3;
+  --yellow:#8A6D1B;
+  --yellow-bg:#F7EDC9;
+  --max:760px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65;
+  font-size:16px;
+}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{opacity:.8}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px 80px}
+.topbar{
+  position:sticky;top:0;z-index:10;
+  background:rgba(250,246,239,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:var(--max);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.2px}
+.brand small{display:block;font-family:inherit;font-weight:400;font-size:12px;color:var(--muted)}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink);text-decoration:underline}
+.hero{
+  margin-top:34px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:32px 28px;
+}
+.badge{
+  display:inline-block;font-size:13px;
+  background:var(--accent-bg);
+  border:1px solid var(--line);
+  padding:4px 10px;border-radius:999px;
+  margin-bottom:12px;color:#5a4a26;
+}
+h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:38px;line-height:1.15;margin:0 0 8px;
+  letter-spacing:-.5px;
+}
+.subtitle{color:var(--muted);margin:0 0 16px;font-size:17px}
+.meta{font-size:14px;color:var(--muted);margin:8px 0}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{
+  display:inline-block;padding:9px 16px;border-radius:10px;
+  border:1px solid var(--ink);background:var(--ink);color:#fff;
+  text-decoration:none;font-size:14px;
+}
+.btn.ghost{background:transparent;color:var(--ink)}
+section.card{
+  margin-top:22px;background:var(--card);
+  border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px;
+}
+h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:22px;margin:0 0 4px;
+}
+.kicker{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px}
+hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}h1{font-size:30px}}
+.pill-list{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.pill-list li{
+  font-size:13.5px;background:#fff;border:1px solid var(--line);
+  padding:6px 11px;border-radius:999px;
+}
+ul.tight{padding-left:20px;margin:8px 0}
+ul.tight li{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:10px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+.tag{font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.tag.ok{background:var(--green-bg);color:var(--green);border-color:#c4d8bf}
+.tag.wait{background:var(--yellow-bg);color:var(--yellow);border-color:#e3d194}
+.finding{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:#fff;margin:10px 0}
+.finding b{display:block;margin-bottom:2px}
+.finding span{font-size:14px;color:var(--muted)}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+@media(max-width:520px){.links{grid-template-columns:1fr}}
+.linkbox{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.linkbox small{color:var(--muted);display:block;font-size:13px}
+.linkbox:hover{border-color:var(--accent)}
+pre{
+  background:#2B2620;color:#F5EEDD;
+  padding:16px;border-radius:12px;overflow:auto;font-size:13.5px;
+}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.footer{margin-top:26px;font-size:13px;color:var(--muted);text-align:center}
+.note{font-size:13.5px;background:var(--accent-bg);border:1px dashed #cbb887;border-radius:10px;padding:10px 12px;margin-top:12px}
