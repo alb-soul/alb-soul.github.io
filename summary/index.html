@@ -168,17 +168,17 @@
         <div class="card-body border-top border-secondary pt-3">
           <div class="row g-3">
             <div class="col-md-4">
-              <a href="certs/rhcsa.png" class="cert-thumb" data-pdf="certs/rhcsa.pdf" data-title="RHCSA — Red Hat Certified System Administrator (ID 230-276-685)"><img src="certs/rhcsa.png" class="img-fluid rounded border border-secondary" alt="Sertifikat RHCSA — klik untuk perbesar"></a>
+              <a href="certs/rhcsa.min.jpg" class="cert-thumb" data-pdf="certs/rhcsa.pdf" data-title="RHCSA — Red Hat Certified System Administrator (ID 230-276-685)"><img src="certs/rhcsa.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat RHCSA — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Red Hat Certified System Administrator (RHCSA)</strong></p>
               <p class="small text-muted-fix mb-0">ID 230-276-685 • Des 2023 • <a href="https://www.credly.com/go/fBjsa7n0" target="_blank" rel="noopener">verifikasi ↗</a></p>
             </div>
             <div class="col-md-4">
-              <a href="certs/komdigi.png" class="cert-thumb" data-pdf="certs/komdigi.pdf" data-title="Sertifikat Apresiasi KOMDIGI-CSIRT (B-1773/SJ.7/DT.02.08/07/2026)"><img src="certs/komdigi.png" class="img-fluid rounded border border-secondary" alt="Sertifikat Apresiasi Komdigi — klik untuk perbesar"></a>
+              <a href="certs/komdigi.min.jpg" class="cert-thumb" data-pdf="certs/komdigi.pdf" data-title="Sertifikat Apresiasi KOMDIGI-CSIRT (B-1773/SJ.7/DT.02.08/07/2026)"><img src="certs/komdigi.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat Apresiasi Komdigi — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Sertifikat Apresiasi KOMDIGI-CSIRT</strong></p>
               <p class="small text-muted-fix mb-0">No. B-1773/SJ.7/DT.02.08/07/2026 • temuan OS Command Injection • Jul 2026</p>
             </div>
             <div class="col-md-4">
-              <a href="certs/bssn.png" class="cert-thumb" data-pdf="certs/bssn.pdf" data-title="Piagam Penghargaan BSSN VVIP (SERT.083.BSSN/D2/VVIP/04/2024)"><img src="certs/bssn.png" class="img-fluid rounded border border-secondary" alt="Piagam Penghargaan BSSN VVIP — klik untuk perbesar"></a>
+              <a href="certs/bssn.min.jpg" class="cert-thumb" data-pdf="certs/bssn.pdf" data-title="Piagam Penghargaan BSSN VVIP (SERT.083.BSSN/D2/VVIP/04/2024)"><img src="certs/bssn.min.jpg" class="img-fluid rounded border border-secondary" alt="Piagam Penghargaan BSSN VVIP — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Piagam Penghargaan BSSN VVIP Program</strong></p>
               <p class="small text-muted-fix mb-0">No. SERT.083.BSSN/D2/VVIP/04/2024 • D.I. Yogyakarta Tahap III • Apr 2024</p>
             </div>
@@ -219,8 +219,7 @@
       <span class="lb-title" id="lbTitle"></span>
       <button type="button" class="btn btn-sm btn-outline-light" id="lbPrev" aria-label="Sertifikat sebelumnya">←</button>
       <button type="button" class="btn btn-sm btn-outline-light" id="lbNext" aria-label="Sertifikat berikutnya">→</button>
-      <a class="btn btn-sm btn-primary" id="lbPdf" href="#" target="_blank" rel="noopener">Buka PDF ↗</a>
-      <a class="btn btn-sm btn-outline-light" id="lbDl" href="#" download>⤓ Download</a>
+      <a class="btn btn-sm btn-primary" id="lbDl" href="#" download>⤓ Download PDF asli</a>
     </div>
   </figure>
 </div>
@@ -245,8 +244,7 @@
 (function(){
   var thumbs=Array.prototype.slice.call(document.querySelectorAll('.cert-thumb'));
   var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),
-      title=document.getElementById('lbTitle'),pdf=document.getElementById('lbPdf'),
-      dl=document.getElementById('lbDl'),idx=0;
+      title=document.getElementById('lbTitle'),dl=document.getElementById('lbDl'),idx=0;
   function show(i){
     if(!thumbs.length)return;
     idx=(i+thumbs.length)%thumbs.length;
@@ -254,9 +252,8 @@
     img.src=a.getAttribute('href');
     img.alt=a.querySelector('img').alt;
     title.textContent=a.dataset.title||'';
-    pdf.href=a.dataset.pdf||a.getAttribute('href');
-    dl.href=pdf.href;
-    dl.setAttribute('download',pdf.href.split('/').pop());
+    dl.href=a.dataset.pdf||a.getAttribute('href');
+    dl.setAttribute('download',dl.href.split('/').pop());
     lb.hidden=false;lb.classList.add('show');document.body.style.overflow='hidden';
   }
   function hide(){lb.classList.remove('show');lb.hidden=true;img.src='';document.body.style.overflow='';}
