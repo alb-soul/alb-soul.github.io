@@ -11,13 +11,13 @@ Lulusan **Informatika (IPK 3.76)** yang siap terjun ke dunia kerja IT: terbiasa 
 Memiliki minat khusus di keamanan web dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.
 
 - Pendidikan: S1 Informatika, IPK 3.76
-- Kompetensi utama: administrasi Linux (bersertifikat RCHSA), pengelolaan web & database, SQL, troubleshooting dasar
+- Kompetensi utama: administrasi Linux (bersertifikat RHCSA), pengelolaan web & database, SQL, troubleshooting dasar
 - Nilai tambah: pemahaman pengujian keamanan web (OWASP) + responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)
 - Kesiapan: cepat belajar teknologi baru — saat ini mendalami Python/Django; bersedia remote / hybrid
 
 ## Kemampuan
 
-- Administrasi Sistem: Linux Server (RCHSA), Bash, SSH & permission, LAMP/hosting, troubleshooting dasar
+- Administrasi Sistem: Linux Server (RHCSA), Bash, SSH & permission, LAMP/hosting, troubleshooting dasar
 - Web & Database: PHP-MySQL, SQL, HTML/CSS, REST dasar, Django (dipelajari)
 - Dukungan IT & Kerja Tim: dokumentasi teknis, Markdown, Git & GitHub, laporan & komunikasi
 - Keamanan Web (minat khusus): OWASP dasar, vulnerability assessment, Burp Suite dasar
@@ -47,11 +47,9 @@ Memiliki minat khusus di keamanan web dan terbiasa melaporkan temuan kerentanan 
 
 ## Sertifikat
 
-Dummy dulu, ganti file di `certs/`:
-
-- `certs/rchsa.pdf`
-- `certs/bssn.pdf`
-- `certs/komdigi.pdf`
+- **RHCSA** — Red Hat Certified System Administrator, ID 230-276-685 (Des 2023) — `certs/rhcsa.pdf` — [verifikasi](https://www.credly.com/go/fBjsa7n0)
+- **KOMDIGI-CSIRT** — Sertifikat Apresiasi No. B-1773/SJ.7/DT.02.08/07/2026, temuan OS Command Injection (Jul 2026) — `certs/komdigi.pdf`
+- **BSSN** — Piagam Penghargaan VVIP No. SERT.083.BSSN/D2/VVIP/04/2024, D.I. Yogyakarta Tahap III (Apr 2024) — `certs/bssn.pdf`
 
 ## Tautan
 
