@@ -240,33 +240,58 @@
 })();
 </script>
 <script>
-/* Lightbox sertifikat: perbesar float + blur, tutup via ✕ / klik luar / Escape */
+/* Lightbox sertifikat: perbesar float + blur.
+   Tutup via ✕ / klik luar / Escape / tombol BACK & swipe-back HP (bertahap). */
 (function(){
   var thumbs=Array.prototype.slice.call(document.querySelectorAll('.cert-thumb'));
   var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),
-      title=document.getElementById('lbTitle'),dl=document.getElementById('lbDl'),idx=0;
-  function show(i){
-    if(!thumbs.length)return;
-    idx=(i+thumbs.length)%thumbs.length;
+      title=document.getElementById('lbTitle'),dl=document.getElementById('lbDl'),idx=0,
+      lbOpen=false,pushed=false;
+  function nameOf(a){return (a.dataset.pdf||a.getAttribute('href')).split('/').pop().split('.')[0];}
+  function paint(){
     var a=thumbs[idx];
     img.src=a.getAttribute('href');
     img.alt=a.querySelector('img').alt;
     title.textContent=a.dataset.title||'';
     dl.href=a.dataset.pdf||a.getAttribute('href');
     dl.setAttribute('download',dl.href.split('/').pop());
-    lb.hidden=false;lb.classList.add('show');document.body.style.overflow='hidden';
   }
-  function hide(){lb.classList.remove('show');lb.hidden=true;img.src='';document.body.style.overflow='';}
-  thumbs.forEach(function(a,i){a.addEventListener('click',function(e){e.preventDefault();show(i)})});
-  document.getElementById('lbPrev').addEventListener('click',function(){show(idx-1)});
-  document.getElementById('lbNext').addEventListener('click',function(){show(idx+1)});
-  lb.querySelectorAll('[data-lb-close]').forEach(function(el){el.addEventListener('click',hide)});
+  function show(i,nav){
+    if(!thumbs.length)return;
+    idx=(i+thumbs.length)%thumbs.length;
+    paint();
+    if(!lbOpen){lb.hidden=false;lb.classList.add('show');document.body.style.overflow='hidden';lbOpen=true;}
+    try{
+      if(nav){history.replaceState({lb:idx},'','#cert-'+nameOf(thumbs[idx]));}
+      else{history.pushState({lb:idx},'','#cert-'+nameOf(thumbs[idx]));pushed=true;}
+    }catch(e){pushed=false;}
+  }
+  function hide(){
+    lb.classList.remove('show');lb.hidden=true;img.src='';document.body.style.overflow='';lbOpen=false;
+  }
+  function uiClose(){
+    if(!lbOpen)return;
+    if(pushed&&/^#cert-/.test(location.hash)){pushed=false;history.back();}
+    else{hide();if(/^#cert-/.test(location.hash)){try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}}}
+  }
+  thumbs.forEach(function(a,i){a.addEventListener('click',function(e){e.preventDefault();show(i,false)})});
+  document.getElementById('lbPrev').addEventListener('click',function(){show(idx-1,true)});
+  document.getElementById('lbNext').addEventListener('click',function(){show(idx+1,true)});
+  lb.querySelectorAll('[data-lb-close]').forEach(function(el){el.addEventListener('click',uiClose)});
   document.addEventListener('keydown',function(e){
-    if(lb.hidden)return;
-    if(e.key==='Escape')hide();
-    if(e.key==='ArrowLeft')show(idx-1);
-    if(e.key==='ArrowRight')show(idx+1);
+    if(!lbOpen)return;
+    if(e.key==='Escape')uiClose();
+    if(e.key==='ArrowLeft')show(idx-1,true);
+    if(e.key==='ArrowRight')show(idx+1,true);
   });
+  // BACK browser / swipe-back HP: tutup gambar dulu, bukan pindah halaman
+  window.addEventListener('popstate',function(){if(lbOpen){pushed=false;hide();}});
+  // Deep link: /summary/#cert-komdigi langsung membuka gambarnya
+  (function(){
+    var m=/^#cert-([a-z]+)/.exec(location.hash||'');
+    if(!m)return;
+    for(var i=0;i<thumbs.length;i++){if(nameOf(thumbs[i])===m[1]){show(i,false);break;}}
+  })();
 })();
 </script>
 </body>
