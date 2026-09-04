@@ -33,6 +33,17 @@
     details.card summary:hover .card-title{text-decoration:underline}
     details.card summary:focus-visible{outline:2px solid #8AB4FF;border-radius:.5rem}
     .crumb{color:#ADB5BD !important}
+    /* Lightbox sertifikat: jendela float + latar blur */
+    #lightbox{position:fixed;inset:0;z-index:1050;display:none;align-items:center;justify-content:center;padding:1rem}
+    #lightbox.show{display:flex}
+    #lightbox .lb-backdrop{position:absolute;inset:0;background:rgba(8,10,14,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+    #lightbox figure{position:relative;margin:0;width:min(920px,100%);max-height:92vh;display:flex;flex-direction:column;background:#16191D;border:1px solid #6C757D;border-radius:.75rem;overflow:hidden}
+    #lightbox img{width:100%;max-height:calc(92vh - 140px);object-fit:contain;background:#0B0D10}
+    #lightbox .lb-bar{display:flex;align-items:center;gap:.5rem;padding:.6rem .8rem;border-top:1px solid #495057;flex-wrap:wrap}
+    #lightbox .lb-title{color:#F8F9FA;font-size:.85rem;margin-right:auto}
+    #lightbox .lb-close{position:absolute;top:.5rem;right:.5rem;z-index:2}
+    .cert-thumb img{transition:transform .2s ease,box-shadow .2s ease}
+    .cert-thumb:hover img{transform:scale(1.02);box-shadow:0 0 0 2px #8AB4FF}
   </style>
 </head>
 <body class="bg-dark">
@@ -152,22 +163,22 @@
       <details class="card border-secondary mt-3" id="sertifikat" open>
         <summary class="card-body">
           <h2 class="card-title h4 d-inline">Sertifikat</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • klik gambar untuk buka PDF penuh</p>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • klik gambar untuk perbesar 🔍</p>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
           <div class="row g-3">
             <div class="col-md-4">
-              <a href="certs/rhcsa.pdf" target="_blank" rel="noopener"><img src="certs/rhcsa.png" class="img-fluid rounded border border-secondary" alt="Sertifikat RHCSA"></a>
+              <a href="certs/rhcsa.png" class="cert-thumb" data-pdf="certs/rhcsa.pdf" data-title="RHCSA — Red Hat Certified System Administrator (ID 230-276-685)"><img src="certs/rhcsa.png" class="img-fluid rounded border border-secondary" alt="Sertifikat RHCSA — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Red Hat Certified System Administrator (RHCSA)</strong></p>
               <p class="small text-muted-fix mb-0">ID 230-276-685 • Des 2023 • <a href="https://www.credly.com/go/fBjsa7n0" target="_blank" rel="noopener">verifikasi ↗</a></p>
             </div>
             <div class="col-md-4">
-              <a href="certs/komdigi.pdf" target="_blank" rel="noopener"><img src="certs/komdigi.png" class="img-fluid rounded border border-secondary" alt="Sertifikat Apresiasi Komdigi"></a>
+              <a href="certs/komdigi.png" class="cert-thumb" data-pdf="certs/komdigi.pdf" data-title="Sertifikat Apresiasi KOMDIGI-CSIRT (B-1773/SJ.7/DT.02.08/07/2026)"><img src="certs/komdigi.png" class="img-fluid rounded border border-secondary" alt="Sertifikat Apresiasi Komdigi — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Sertifikat Apresiasi KOMDIGI-CSIRT</strong></p>
               <p class="small text-muted-fix mb-0">No. B-1773/SJ.7/DT.02.08/07/2026 • temuan OS Command Injection • Jul 2026</p>
             </div>
             <div class="col-md-4">
-              <a href="certs/bssn.pdf" target="_blank" rel="noopener"><img src="certs/bssn.png" class="img-fluid rounded border border-secondary" alt="Piagam Penghargaan BSSN VVIP"></a>
+              <a href="certs/bssn.png" class="cert-thumb" data-pdf="certs/bssn.pdf" data-title="Piagam Penghargaan BSSN VVIP (SERT.083.BSSN/D2/VVIP/04/2024)"><img src="certs/bssn.png" class="img-fluid rounded border border-secondary" alt="Piagam Penghargaan BSSN VVIP — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Piagam Penghargaan BSSN VVIP Program</strong></p>
               <p class="small text-muted-fix mb-0">No. SERT.083.BSSN/D2/VVIP/04/2024 • D.I. Yogyakarta Tahap III • Apr 2024</p>
             </div>
@@ -198,6 +209,21 @@
     </div>
   </div>
 </main>
+<!-- Lightbox sertifikat -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau sertifikat" hidden>
+  <div class="lb-backdrop" data-lb-close></div>
+  <figure>
+    <button type="button" class="btn btn-sm btn-light lb-close" data-lb-close aria-label="Tutup">✕</button>
+    <img id="lbImg" src="" alt="Pratinjau sertifikat">
+    <div class="lb-bar">
+      <span class="lb-title" id="lbTitle"></span>
+      <button type="button" class="btn btn-sm btn-outline-light" id="lbPrev" aria-label="Sertifikat sebelumnya">←</button>
+      <button type="button" class="btn btn-sm btn-outline-light" id="lbNext" aria-label="Sertifikat berikutnya">→</button>
+      <a class="btn btn-sm btn-primary" id="lbPdf" href="#" target="_blank" rel="noopener">Buka PDF ↗</a>
+      <a class="btn btn-sm btn-outline-light" id="lbDl" href="#" download>⤓ Download</a>
+    </div>
+  </figure>
+</div>
 <script>
 (function(){
   var btnOpen=document.getElementById('expandAll'),
@@ -211,6 +237,38 @@
       var t=document.querySelector(a.getAttribute('href'));
       if(t&&t.tagName==='DETAILS')t.open=true;
     });
+  });
+})();
+</script>
+<script>
+/* Lightbox sertifikat: perbesar float + blur, tutup via ✕ / klik luar / Escape */
+(function(){
+  var thumbs=Array.prototype.slice.call(document.querySelectorAll('.cert-thumb'));
+  var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),
+      title=document.getElementById('lbTitle'),pdf=document.getElementById('lbPdf'),
+      dl=document.getElementById('lbDl'),idx=0;
+  function show(i){
+    if(!thumbs.length)return;
+    idx=(i+thumbs.length)%thumbs.length;
+    var a=thumbs[idx];
+    img.src=a.getAttribute('href');
+    img.alt=a.querySelector('img').alt;
+    title.textContent=a.dataset.title||'';
+    pdf.href=a.dataset.pdf||a.getAttribute('href');
+    dl.href=pdf.href;
+    dl.setAttribute('download',pdf.href.split('/').pop());
+    lb.hidden=false;lb.classList.add('show');document.body.style.overflow='hidden';
+  }
+  function hide(){lb.classList.remove('show');lb.hidden=true;img.src='';document.body.style.overflow='';}
+  thumbs.forEach(function(a,i){a.addEventListener('click',function(e){e.preventDefault();show(i)})});
+  document.getElementById('lbPrev').addEventListener('click',function(){show(idx-1)});
+  document.getElementById('lbNext').addEventListener('click',function(){show(idx+1)});
+  lb.querySelectorAll('[data-lb-close]').forEach(function(el){el.addEventListener('click',hide)});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')hide();
+    if(e.key==='ArrowLeft')show(idx-1);
+    if(e.key==='ArrowRight')show(idx+1);
   });
 })();
 </script>
