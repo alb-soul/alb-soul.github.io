@@ -8,11 +8,34 @@
   <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../blocks.css">
   <link href="../style.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../hacker.ico">
   <title>Summary — Imamuddin Al Mustaqim</title>
+  <style>
+    /* Kontras aman di atas bg-dark bootstrap (#212529) */
+    body{background-color:#212529 !important;color:#E9ECEF !important}
+    .card{background-color:#212529 !important;border-color:#6C757D !important}
+    .card-title{color:#FFFFFF !important}
+    .text-muted-fix{color:#CED4DA !important}
+    a{color:#8AB4FF !important}
+    a:hover{color:#B6CCFF !important}
+    a.btn-primary{color:#fff !important}
+    a.btn-outline-light{color:#F8F9FA !important;border-color:#ADB5BD !important}
+    a.btn-outline-light:hover{background:#495057 !important}
+    .badge.bg-secondary{background:#6C757D !important;color:#fff !important}
+    .badge.bg-success{color:#fff !important}
+    .list-group-item{background:#212529 !important;color:#E9ECEF !important;border-color:#6C757D !important}
+    .table-dark{--bs-table-bg:#212529;--bs-table-striped-bg:#2C3034;color:#E9ECEF !important}
+    /* Dropdown / collapsible ala markdown <details> */
+    details.card summary{cursor:pointer;list-style:none}
+    details.card summary::-webkit-details-marker{display:none}
+    details.card summary::after{content:"▾";float:right;color:#ADB5BD;font-size:1.1rem;line-height:1.6}
+    details.card:not([open]) summary::after{content:"▸"}
+    details.card summary:hover .card-title{text-decoration:underline}
+    details.card summary:focus-visible{outline:2px solid #8AB4FF;border-radius:.5rem}
+    .crumb{color:#ADB5BD !important}
+  </style>
 </head>
-<body class="bg-dark text-muted">
+<body class="bg-dark">
 <main>
   <!-- HERO: sama gaya dengan root -->
   <section class="bg-dark pb-4 position-relative pt-5">
@@ -20,10 +43,10 @@
       <div class="align-items-center gy-4 justify-content-center row">
         <div class="col-md-10 col-xl-7">
           <img src="../neo-prof.jpg" class="bg-white img-fluid mb-4 p-2 rounded-circle shadow" width="180" alt="foto profil"/>
-          <p class="mb-1"><a href="../" class="link-secondary text-decoration-none">← alb-soul.github.io</a> <span class="text-secondary">/</span> <span class="text-light">summary</span></p>
-          <h1 class="display-5 fw-bold mb-3 text-light">Imamuddin Al Mustaqim</h1>
-          <p class="mb-2 pe-sm-5 ps-sm-5 text-light">Lulusan Informatika — IPK 3.76 • Web Security • Backend PHP-MySQL • Linux (RCHSA)</p>
-          <p class="small">📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalsel • ✉️ <a href="mailto:xeamam.hsu@gmail.com">xeamam.hsu@gmail.com</a></p>
+          <p class="mb-1 crumb small"><a href="../">← alb-soul.github.io</a> / <span class="text-white">summary</span></p>
+          <h1 class="display-5 fw-bold mb-3 text-white">Imamuddin Al Mustaqim</h1>
+          <p class="mb-2 px-sm-5 text-white">Lulusan Informatika — IPK 3.76 • Web Security • Backend PHP-MySQL • Linux (RCHSA)</p>
+          <p class="small text-muted-fix">📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalsel<br>✉️ <a href="mailto:xeamam.hsu@gmail.com">xeamam.hsu@gmail.com</a></p>
           <p><span class="badge bg-primary">MagangHub Batch 2 • 2026 — terbuka magang IT / Cyber Security</span></p>
           <div class="d-inline-flex flex-wrap gap-2 justify-content-center">
             <a href="https://github.com/alb-soul" aria-label="github" class="border-0 btn btn-primary lh-1 p-2 rounded-circle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.23-.01-.85-.01-1.66-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03a9.56 9.56 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.39.2 2.42.1 2.67.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.93.36.31.67.91.67 1.83 0 1.32-.01 2.39-.01 2.71 0 .27.16.58.67.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
@@ -39,6 +62,10 @@
             <a href="#temuan" class="btn btn-outline-light btn-sm">Temuan</a>
             <a href="#sertifikat" class="btn btn-outline-light btn-sm">Sertifikat</a>
           </div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center mt-2">
+            <button id="expandAll" type="button" class="btn btn-link btn-sm">Buka semua ▾</button>
+            <button id="collapseAll" type="button" class="btn btn-link btn-sm">Tutup semua ▸</button>
+          </div>
         </div>
       </div>
     </div>
@@ -47,35 +74,43 @@
   <div class="container pb-5">
     <div class="col-lg-8 mx-lg-auto">
 
-      <div class="card bg-dark border-secondary mt-4" id="tentang">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Ringkasan</h2>
-          <p class="card-text">Lulusan Informatika dengan minat di <strong class="text-light">Web Security</strong> dan <strong class="text-light">Back-end Programming</strong>. Terbiasa <em>reconnaissance</em>, <em>web penetration testing</em>, dan <em>vulnerability assessment</em> via responsible disclosure ke Gov CSIRT Indonesia.</p>
-          <ul class="mb-0">
-            <li><strong class="text-light">Pendidikan:</strong> S1 Informatika, IPK 3.76</li>
-            <li><strong class="text-light">Fokus:</strong> Linux Server, PHP-MySQL, SQL, Django (sedang dipelajari)</li>
-            <li><strong class="text-light">Disclosure:</strong> BSSN, Komdigi, Polri, PU, Kemnaker, Kemendikdasmen, Kebumen, BPS, Baliprov</li>
-            <li><strong class="text-light">Binus Bug Bounty:</strong> 3 temuan High sedang diproses</li>
+      <details class="card border-secondary mt-4" id="tentang" open>
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Ringkasan</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
+          <p>Lulusan Informatika dengan minat di <strong class="text-white">Web Security</strong> dan <strong class="text-white">Back-end Programming</strong>. Terbiasa <em>reconnaissance</em>, <em>web penetration testing</em>, dan <em>vulnerability assessment</em> via responsible disclosure ke Gov CSIRT Indonesia.</p>
+          <ul class="mb-0 text-muted-fix">
+            <li><strong class="text-white">Pendidikan:</strong> S1 Informatika, IPK 3.76</li>
+            <li><strong class="text-white">Fokus:</strong> Linux Server, PHP-MySQL, SQL, Django (sedang dipelajari)</li>
+            <li><strong class="text-white">Disclosure:</strong> BSSN, Komdigi, Polri, PU, Kemnaker, Kemendikdasmen, Kebumen, BPS, Baliprov</li>
+            <li><strong class="text-white">Binus Bug Bounty:</strong> 3 temuan High sedang diproses</li>
           </ul>
         </div>
-      </div>
+      </details>
 
-      <div class="card bg-dark border-secondary mt-3" id="skills">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Skills</h2>
-          <p class="mb-1 text-light">🔐 Web Security</p>
+      <details class="card border-secondary mt-3" id="skills" open>
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Skills</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
+          <p class="mb-1 text-white">🔐 Web Security</p>
           <p><span class="badge bg-secondary me-1 mb-1">Reconnaissance</span><span class="badge bg-secondary me-1 mb-1">Web Pentest</span><span class="badge bg-secondary me-1 mb-1">Vuln. Assessment</span><span class="badge bg-secondary me-1 mb-1">OWASP Top 10</span><span class="badge bg-secondary me-1 mb-1">Burp Suite</span></p>
-          <p class="mb-1 text-light">🖥️ Linux &amp; Server</p>
+          <p class="mb-1 text-white">🖥️ Linux &amp; Server</p>
           <p><span class="badge bg-secondary me-1 mb-1">Linux (RCHSA)</span><span class="badge bg-secondary me-1 mb-1">Bash dasar</span><span class="badge bg-secondary me-1 mb-1">SSH &amp; permissions</span><span class="badge bg-secondary me-1 mb-1">LAMP setup</span></p>
-          <p class="mb-1 text-light">💻 Backend</p>
+          <p class="mb-1 text-white">💻 Backend</p>
           <p class="mb-0"><span class="badge bg-secondary me-1 mb-1">PHP-MySQL</span><span class="badge bg-secondary me-1 mb-1">SQL</span><span class="badge bg-secondary me-1 mb-1">REST dasar</span><span class="badge bg-secondary me-1 mb-1">Django (belajar)</span><span class="badge bg-secondary me-1 mb-1">HTML/CSS</span><span class="badge bg-secondary me-1 mb-1">Git &amp; GitHub</span><span class="badge bg-secondary me-1 mb-1">Markdown docs</span></p>
         </div>
-      </div>
+      </details>
 
-      <div class="card bg-dark border-secondary mt-3" id="hall">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Hall of Fame — Gov CSIRT</h2>
-          <p class="card-text small">BSSN &amp; Komdigi sudah terbit sertifikat. Selebihnya tercatat sebagai reporter (responsible disclosure).</p>
+      <details class="card border-secondary mt-3" id="hall" open>
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Hall of Fame — Gov CSIRT</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • BSSN &amp; Komdigi bersertifikat</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
           <div class="table-responsive">
           <table class="table table-dark table-striped table-bordered mb-0">
             <thead><tr><th>Instansi</th><th>Status</th><th>Keterangan</th></tr></thead>
@@ -94,25 +129,30 @@
           </table>
           </div>
         </div>
-      </div>
+      </details>
 
-      <div class="card bg-dark border-secondary mt-3" id="temuan">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Temuan Kerentanan <small class="text-muted fs-6">(tanpa detail sensitif)</small></h2>
+      <details class="card border-secondary mt-3" id="temuan">
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Temuan Kerentanan</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • tanpa detail sensitif</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-dark text-muted border-secondary"><strong class="text-light">RCE via File Upload</strong><br><span class="small">Mitigasi: whitelist MIME, rename file, simpan di luar webroot, disable execute.</span></li>
-            <li class="list-group-item bg-dark text-muted border-secondary"><strong class="text-light">XSS (Reflected / Stored)</strong><br><span class="small">Mitigasi: output encoding, CSP, validasi input.</span></li>
-            <li class="list-group-item bg-dark text-muted border-secondary"><strong class="text-light">Sensitive Key Exposure</strong><br><span class="small">Mitigasi: env vars, rotate key, bersihkan git history.</span></li>
-            <li class="list-group-item bg-dark text-muted border-secondary"><strong class="text-light">Client-Side Prototype Pollution</strong><br><span class="small">Mitigasi: sanitasi key __proto__/constructor/prototype.</span></li>
-            <li class="list-group-item bg-dark text-muted border-secondary"><strong class="text-light">PII Exposure</strong><br><span class="small">Mitigasi: minimasi data, authz check, masking.</span></li>
+            <li class="list-group-item border-secondary"><strong class="text-white">RCE via File Upload</strong><br><span class="small text-muted-fix">Mitigasi: whitelist MIME, rename file, simpan di luar webroot, disable execute.</span></li>
+            <li class="list-group-item border-secondary"><strong class="text-white">XSS (Reflected / Stored)</strong><br><span class="small text-muted-fix">Mitigasi: output encoding, CSP, validasi input.</span></li>
+            <li class="list-group-item border-secondary"><strong class="text-white">Sensitive Key Exposure</strong><br><span class="small text-muted-fix">Mitigasi: env vars, rotate key, bersihkan git history.</span></li>
+            <li class="list-group-item border-secondary"><strong class="text-white">Client-Side Prototype Pollution</strong><br><span class="small text-muted-fix">Mitigasi: sanitasi key __proto__/constructor/prototype.</span></li>
+            <li class="list-group-item border-secondary"><strong class="text-white">PII Exposure</strong><br><span class="small text-muted-fix">Mitigasi: minimasi data, authz check, masking.</span></li>
           </ul>
         </div>
-      </div>
+      </details>
 
-      <div class="card bg-dark border-secondary mt-3" id="sertifikat">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Sertifikat</h2>
-          <p class="card-text small">Dummy dulu — taruh PDF asli di <code>summary/certs/</code>, link otomatis jalan.</p>
+      <details class="card border-secondary mt-3" id="sertifikat">
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Sertifikat</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • dummy, taruh PDF asli di summary/certs/</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
           <div class="d-flex flex-wrap gap-2">
             <a href="certs/rchsa.pdf" class="btn btn-outline-light btn-sm">🏅 RCHSA — Linux</a>
             <a href="certs/bssn.pdf" class="btn btn-outline-light btn-sm">🏅 BSSN — Reporter</a>
@@ -120,11 +160,14 @@
             <a href="content.md" class="btn btn-outline-light btn-sm">📄 Versi Markdown</a>
           </div>
         </div>
-      </div>
+      </details>
 
-      <div class="card bg-dark border-secondary mt-3" id="kontak">
-        <div class="card-body">
-          <h2 class="card-title h4 text-light">Kontak &amp; Karya</h2>
+      <details class="card border-secondary mt-3" id="kontak" open>
+        <summary class="card-body">
+          <h2 class="card-title h4 d-inline">Kontak &amp; Karya</h2>
+          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+        </summary>
+        <div class="card-body border-top border-secondary pt-3">
           <div class="d-flex flex-wrap gap-2">
             <a href="https://github.com/alb-soul" class="btn btn-primary btn-sm" target="_blank" rel="noopener">GitHub</a>
             <a href="https://medium.com/@alb-soul" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Medium</a>
@@ -132,14 +175,30 @@
             <a href="https://id.linkedin.com/in/imamuddin-al-mustaqim" class="btn btn-primary btn-sm" target="_blank" rel="noopener">LinkedIn</a>
             <a href="mailto:xeamam.hsu@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
           </div>
-          <p class="small mt-3 mb-0">Siap magang <strong class="text-light">MagangHub Batch 2 2026</strong>: IT Support / Web Backend / Cyber Security intern — remote / hybrid.</p>
+          <p class="small mt-3 mb-0 text-muted-fix">Siap magang <strong class="text-white">MagangHub Batch 2 2026</strong>: IT Support / Web Backend / Cyber Security intern — remote / hybrid.</p>
         </div>
-      </div>
+      </details>
 
-      <p class="text-center small mt-4">© 2026 Imamuddin Al Mustaqim • <a href="../" class="link-secondary">← kembali ke beranda</a></p>
+      <p class="text-center small mt-4 text-muted-fix">© 2026 Imamuddin Al Mustaqim • <a href="../">← kembali ke beranda</a></p>
 
     </div>
   </div>
 </main>
+<script>
+(function(){
+  var btnOpen=document.getElementById('expandAll'),
+      btnClose=document.getElementById('collapseAll');
+  function all(open){document.querySelectorAll('details.card').forEach(function(d){d.open=open})}
+  if(btnOpen)btnOpen.addEventListener('click',function(){all(true)});
+  if(btnClose)btnClose.addEventListener('click',function(){all(false)});
+  // anchor nav: buka dulu section target biar tidak tersembunyi
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var t=document.querySelector(a.getAttribute('href'));
+      if(t&&t.tagName==='DETAILS')t.open=true;
+    });
+  });
+})();
+</script>
 </body>
 </html>
