@@ -57,6 +57,16 @@
     .cert-rail>div{flex:0 0 80%;max-width:300px;scroll-snap-align:start}
     @media(min-width:768px){.cert-rail>div{flex:0 0 31%}}
     .cert-rail img{width:100%;aspect-ratio:10/7;object-fit:cover}
+    /* Optimasi mobile */
+    @media(max-width:576px){
+      h1.display-5{font-size:2rem !important}
+      section.pt-5{padding-top:1.5rem !important}
+      .table{font-size:.8rem}
+      .btn-sm{font-size:.8rem}
+      #lightbox{padding:.5rem}
+      #lightbox .lb-title{flex-basis:100%;font-size:.75rem;margin-bottom:.25rem}
+      #lightbox img{max-height:calc(92vh - 176px)}
+    }
   </style>
 </head>
 <body class="bg-dark">
@@ -67,10 +77,9 @@
       <div class="align-items-center gy-4 justify-content-center row">
         <div class="col-md-10 col-xl-7">
           <img src="../neo-prof.jpg" class="bg-white img-fluid mb-4 p-2 rounded-circle shadow" width="180" alt="foto profil"/>
-          <p class="mb-1 crumb small"><a href="../">← alb-soul.github.io</a> / <span class="text-white">summary</span></p>
           <h1 class="display-5 fw-bold mb-3 text-white">Imamuddin Al Mustaqim</h1>
           <p class="mb-2 px-sm-5 text-white">Informatika (IPK 3.76) — Universitas Ahmad Dahlan (UAD) Yogyakarta<br><span class="hl-skill">Linux</span> • <span class="hl-skill">Sysadmin</span> • <span class="hl-skill">Web Security Pentester</span> • <span class="hl-skill">Backend PHP-MySQL</span> • <span class="hl-skill">SQL</span></p>
-          <p class="small text-muted-fix">📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalsel<br>✉️ <a href="mailto:xeamam.hsu@gmail.com">xeamam.hsu@gmail.com</a></p>
+          <p class="small text-muted-fix">📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalimantan Selatan<br>✉️ <a href="mailto:xeamam.hsu@gmail.com">xeamam.hsu@gmail.com</a></p>
           <div class="d-inline-flex flex-wrap gap-2 justify-content-center">
             <a href="https://github.com/alb-soul" aria-label="github" class="border-0 btn btn-primary lh-1 p-2 rounded-circle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.23-.01-.85-.01-1.66-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03a9.56 9.56 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.39.2 2.42.1 2.67.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.93.36.31.67.91.67 1.83 0 1.32-.01 2.39-.01 2.71 0 .27.16.58.67.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
             <a href="https://medium.com/@alb-soul" aria-label="medium" class="border-0 btn btn-primary lh-1 p-2 rounded-circle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M21.44 6.29a.43.43 0 0 0-.1-.38L19.44 3.8a.44.44 0 0 0-.36-.2h-3.22c-.14 0-.27.07-.35.18l-3.35 5.88-.7 1.2-2.9-7.08a.39.39 0 0 0-.36-.28H2.56a.44.44 0 0 0-.44.44v.25l.12.12 4.08 5.73v.08L2 18.38a.44.44 0 0 0-.1.32c0 .09.03.19.1.27l1.92 2.68a.43.43 0 0 0 .36.18h3.22a.41.41 0 0 0 .35-.18l3.32-5.86.71-1.2 2.91 7.06c.06.16.21.27.36.27h3.48c.12 0 .23-.06.3-.15l2.98-4.57a.36.36 0 0 0 .08-.23V6.29z"/></svg></a>
@@ -101,12 +110,12 @@
           <h2 class="card-title h4">Ringkasan</h2>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
-          <p><strong>Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta</strong> — siap terjun ke dunia kerja IT: terbiasa mengelola <strong>server Linux</strong>, <strong>website &amp; database (PHP-MySQL)</strong>, serta <strong>dukungan teknis dan dokumentasi</strong>. Berspesialisasi di <strong>pengujian keamanan web (penetration testing)</strong> dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.</p>
+          <p><strong>Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta</strong> — terbiasa mengelola <strong>server Linux</strong>, <strong>website &amp; database (PHP-MySQL)</strong>, serta <strong>dukungan teknis dan dokumentasi</strong>. Berspesialisasi di <strong>pengujian keamanan web (penetration testing)</strong> dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.</p>
           <ul class="mb-0">
             <li><strong>Pendidikan:</strong> S1 Informatika, IPK 3.76</li>
-            <li><strong>Kompetensi utama:</strong> administrasi Linux (RHCSA), backend PHP-MySQL &amp; SQL, web security penetration testing</li>
+            <li><strong>Kompetensi utama:</strong> administrasi Linux (RHCSA), backend PHP-MySQL &amp; SQL, web security penetration testing &amp; vulnerability assessment</li>
             <li><strong>Nilai tambah:</strong> pemahaman pengujian keamanan web (OWASP) + pengalaman responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)</li>
-            <li><strong>Kesiapan:</strong> cepat belajar teknologi baru — saat ini mendalami Python/Django; bersedia remote / hybrid</li>
+            <li><strong>Kesiapan:</strong> cepat belajar teknologi baru — saat ini mendalami Python/Django</li>
           </ul>
         </div>
       </details>
@@ -146,7 +155,7 @@
               <tr><td>Kab. Kebumen</td><td><span class="badge bg-secondary">Dilaporkan</span></td><td>Responsible disclosure</td></tr>
               <tr><td>BPS</td><td><span class="badge bg-secondary">Dilaporkan</span></td><td>Responsible disclosure</td></tr>
               <tr><td>Bali Prov</td><td><span class="badge bg-secondary">Dilaporkan</span></td><td>Responsible disclosure</td></tr>
-              <tr><td>Binus Bug Bounty</td><td><span class="badge bg-warning text-dark">3 High diproses</span></td><td>Bounty belum beruntung</td></tr>
+              <tr><td>Binus Bug Bounty</td><td><span class="badge bg-warning text-dark">3 High diproses</span></td><td>1 in-Fixing, 2 in-Review</td></tr>
             </tbody>
           </table>
           </div>
@@ -201,11 +210,10 @@
             <a href="https://id.linkedin.com/in/imamuddin-al-mustaqim" class="btn btn-primary btn-sm" target="_blank" rel="noopener">LinkedIn</a>
             <a href="mailto:xeamam.hsu@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
           </div>
-          <p class="small mt-3 mb-0 text-muted-fix">Terbuka untuk magang / posisi IT: System Administrator, Web Security Pentester, Backend Developer, IT Support — remote / hybrid, cepat beradaptasi dengan tugas baru.</p>
         </div>
       </details>
 
-      <p class="text-center small mt-4 text-muted-fix">© 2026 Imamuddin Al Mustaqim • <a href="../">← kembali ke beranda</a></p>
+      <p class="text-center small mt-4 text-muted-fix">© 2026 Imamuddin Al Mustaqim</p>
 
     </div>
   </div>

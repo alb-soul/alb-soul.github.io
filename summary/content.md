@@ -6,14 +6,13 @@
 
 ## Tentang
 
-**Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta** — siap terjun ke dunia kerja IT:
-terbiasa mengelola **server Linux**, **website & database (PHP-MySQL)**, serta **dukungan teknis dan dokumentasi**.
+**Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta** — terbiasa mengelola **server Linux**, **website & database (PHP-MySQL)**, serta **dukungan teknis dan dokumentasi**.
 Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.
 
 - Pendidikan: S1 Informatika UAD Yogyakarta, IPK 3.76
-- Kompetensi utama: administrasi Linux (RHCSA), backend PHP-MySQL & SQL, web security penetration testing
+- Kompetensi utama: administrasi Linux (RHCSA), backend PHP-MySQL & SQL, web security penetration testing & vulnerability assessment
 - Nilai tambah: pemahaman pengujian keamanan web (OWASP) + responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)
-- Kesiapan: cepat belajar teknologi baru — saat ini mendalami Python/Django; bersedia remote / hybrid
+- Kesiapan: cepat belajar teknologi baru — saat ini mendalami Python/Django
 
 ## Kemampuan
 
@@ -35,7 +34,7 @@ Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa
 | Kebumen | Dilaporkan | Responsible disclosure |
 | BPS | Dilaporkan | Responsible disclosure |
 | Baliprov | Dilaporkan | Responsible disclosure |
-| Binus Bug Bounty | 3 High diproses | Bounty belum beruntung |
+| Binus Bug Bounty | 3 High diproses | 1 in-Fixing, 2 in-Review |
 
 ## Sertifikasi & Sertifikat
 
@@ -53,5 +52,3 @@ Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa
 - LinkedIn: https://id.linkedin.com/in/imamuddin-al-mustaqim
 - Email: xeamam.hsu@gmail.com
 
----
-*Terbuka untuk magang / posisi IT: System Administrator, Web Security Pentester, Backend Developer, IT Support.*
