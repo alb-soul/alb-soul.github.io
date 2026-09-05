@@ -6,7 +6,7 @@
 
 ## Tentang
 
-Lulusan **Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta** yang siap terjun ke dunia kerja IT:
+**Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta** — siap terjun ke dunia kerja IT:
 terbiasa mengelola **server Linux**, **website & database (PHP-MySQL)**, serta **dukungan teknis dan dokumentasi**.
 Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.
 
