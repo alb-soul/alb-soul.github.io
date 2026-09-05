@@ -1,6 +1,6 @@
 # Imamuddin Al Mustaqim
 
-> Lulusan Informatika — Universitas Ahmad Dahlan (UAD) Yogyakarta • Linux • Sysadmin • Web Security Pentester • Backend PHP-MySQL • SQL
+> Informatika (IPK 3.76) — Universitas Ahmad Dahlan (UAD) Yogyakarta • Linux • Sysadmin • Web Security Pentester • Backend PHP-MySQL • SQL
 > 📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalimantan Selatan
 > ✉️ xeamam.hsu@gmail.com
 
