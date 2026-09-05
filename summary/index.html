@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Summary — Imamuddin Al Mustaqim, Lulusan Informatika IPK 3.76. Administrasi sistem Linux, pengelolaan web & database, dukungan IT.">
+  <meta name="description" content="Summary — Imamuddin Al Mustaqim, Lulusan Informatika UAD Yogyakarta. Linux, Sysadmin, Web Security Pentester, Backend PHP-MySQL, SQL.">
   <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../blocks.css">
   <link href="../style.css" rel="stylesheet">
@@ -26,9 +26,10 @@
     .list-group-item{background:#212529 !important;color:#E9ECEF !important;border-color:#6C757D !important}
     .table-dark{--bs-table-bg:#212529;--bs-table-striped-bg:#2C3034;color:#E9ECEF !important}
     /* Dropdown / collapsible ala markdown <details> */
-    details.card summary{cursor:pointer;list-style:none}
+    details.card summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.5rem}
     details.card summary::-webkit-details-marker{display:none}
-    details.card summary::after{content:"▾";float:right;color:#ADB5BD;font-size:1.1rem;line-height:1.6}
+    details.card summary .card-title{flex:1;margin-bottom:0}
+    details.card summary::after{content:"▾";color:#ADB5BD;font-size:1.1rem;line-height:1}
     details.card:not([open]) summary::after{content:"▸"}
     details.card summary:hover .card-title{text-decoration:underline}
     details.card summary:focus-visible{outline:2px solid #8AB4FF;border-radius:.5rem}
@@ -56,9 +57,8 @@
           <img src="../neo-prof.jpg" class="bg-white img-fluid mb-4 p-2 rounded-circle shadow" width="180" alt="foto profil"/>
           <p class="mb-1 crumb small"><a href="../">← alb-soul.github.io</a> / <span class="text-white">summary</span></p>
           <h1 class="display-5 fw-bold mb-3 text-white">Imamuddin Al Mustaqim</h1>
-          <p class="mb-2 px-sm-5 text-white">Lulusan Informatika — IPK 3.76 • Administrasi Sistem Linux • Web &amp; Database • Dukungan IT</p>
+          <p class="mb-2 px-sm-5 text-white">Lulusan Informatika — Universitas Ahmad Dahlan (UAD) Yogyakarta • Linux • Sysadmin • Web Security Pentester • Backend PHP-MySQL • SQL</p>
           <p class="small text-muted-fix">📍 Pangkalan Sari, Alabio, Sungai Pandan, Hulu Sungai Utara, Kalsel<br>✉️ <a href="mailto:xeamam.hsu@gmail.com">xeamam.hsu@gmail.com</a></p>
-          <p><span class="badge bg-primary">MagangHub Batch 2 • 2026 — terbuka magang IT (Support / Admin / Web)</span></p>
           <div class="d-inline-flex flex-wrap gap-2 justify-content-center">
             <a href="https://github.com/alb-soul" aria-label="github" class="border-0 btn btn-primary lh-1 p-2 rounded-circle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.23-.01-.85-.01-1.66-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03a9.56 9.56 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.39.2 2.42.1 2.67.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.93.36.31.67.91.67 1.83 0 1.32-.01 2.39-.01 2.71 0 .27.16.58.67.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
             <a href="https://medium.com/@alb-soul" aria-label="medium" class="border-0 btn btn-primary lh-1 p-2 rounded-circle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M21.44 6.29a.43.43 0 0 0-.1-.38L19.44 3.8a.44.44 0 0 0-.36-.2h-3.22c-.14 0-.27.07-.35.18l-3.35 5.88-.7 1.2-2.9-7.08a.39.39 0 0 0-.36-.28H2.56a.44.44 0 0 0-.44.44v.25l.12.12 4.08 5.73v.08L2 18.38a.44.44 0 0 0-.1.32c0 .09.03.19.1.27l1.92 2.68a.43.43 0 0 0 .36.18h3.22a.41.41 0 0 0 .35-.18l3.32-5.86.71-1.2 2.91 7.06c.06.16.21.27.36.27h3.48c.12 0 .23-.06.3-.15l2.98-4.57a.36.36 0 0 0 .08-.23V6.29z"/></svg></a>
@@ -69,9 +69,8 @@
           <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
             <a href="#tentang" class="btn btn-outline-light btn-sm">Tentang</a>
             <a href="#skills" class="btn btn-outline-light btn-sm">Kemampuan</a>
-            <a href="#hall" class="btn btn-outline-light btn-sm">Penghargaan</a>
-            <a href="#temuan" class="btn btn-outline-light btn-sm">Keamanan Web</a>
-            <a href="#sertifikat" class="btn btn-outline-light btn-sm">Sertifikat</a>
+            <a href="#hall" class="btn btn-outline-light btn-sm">Proyek</a>
+            <a href="#sertifikat" class="btn btn-outline-light btn-sm">Sertifikasi</a>
           </div>
           <div class="d-flex flex-wrap gap-2 justify-content-center mt-2">
             <button id="expandAll" type="button" class="btn btn-link btn-sm">Buka semua ▾</button>
@@ -87,14 +86,13 @@
 
       <details class="card border-secondary mt-4" id="tentang" open>
         <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Ringkasan</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+          <h2 class="card-title h4">Ringkasan</h2>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
-          <p>Lulusan <strong class="text-white">Informatika (IPK 3.76)</strong> yang siap terjun ke dunia kerja IT: terbiasa mengelola <strong class="text-white">server Linux</strong>, <strong class="text-white">website &amp; database (PHP-MySQL)</strong>, serta <strong class="text-white">dukungan teknis dan dokumentasi</strong>. Memiliki minat khusus di keamanan web dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.</p>
+          <p>Lulusan <strong class="text-white">Informatika (IPK 3.76)</strong> yang siap terjun ke dunia kerja IT: terbiasa mengelola <strong class="text-white">server Linux</strong>, <strong class="text-white">website &amp; database (PHP-MySQL)</strong>, serta <strong class="text-white">dukungan teknis dan dokumentasi</strong>. Berspesialisasi di <strong class="text-white">pengujian keamanan web (penetration testing)</strong> dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.</p>
           <ul class="mb-0 text-muted-fix">
             <li><strong class="text-white">Pendidikan:</strong> S1 Informatika, IPK 3.76</li>
-            <li><strong class="text-white">Kompetensi utama:</strong> administrasi Linux (bersertifikat RHCSA), pengelolaan web &amp; database, SQL, troubleshooting dasar</li>
+            <li><strong class="text-white">Kompetensi utama:</strong> administrasi Linux (RHCSA), backend PHP-MySQL &amp; SQL, web security penetration testing</li>
             <li><strong class="text-white">Nilai tambah:</strong> pemahaman pengujian keamanan web (OWASP) + pengalaman responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)</li>
             <li><strong class="text-white">Kesiapan:</strong> cepat belajar teknologi baru — saat ini mendalami Python/Django; bersedia remote / hybrid</li>
           </ul>
@@ -103,8 +101,7 @@
 
       <details class="card border-secondary mt-3" id="skills" open>
         <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Kemampuan</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+          <h2 class="card-title h4">Kemampuan</h2>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
           <p class="mb-1 text-white">🖥️ Administrasi Sistem</p>
@@ -113,15 +110,15 @@
           <p><span class="badge bg-secondary me-1 mb-1">PHP-MySQL</span><span class="badge bg-secondary me-1 mb-1">SQL</span><span class="badge bg-secondary me-1 mb-1">HTML/CSS</span><span class="badge bg-secondary me-1 mb-1">REST dasar</span><span class="badge bg-secondary me-1 mb-1">Django (dipelajari)</span></p>
           <p class="mb-1 text-white">🧰 Dukungan IT &amp; Kerja Tim</p>
           <p><span class="badge bg-secondary me-1 mb-1">Dokumentasi teknis</span><span class="badge bg-secondary me-1 mb-1">Markdown</span><span class="badge bg-secondary me-1 mb-1">Git &amp; GitHub</span><span class="badge bg-secondary me-1 mb-1">Laporan &amp; komunikasi</span></p>
-          <p class="mb-1 text-white">🔐 Keamanan Web (minat khusus)</p>
-          <p class="mb-0"><span class="badge bg-secondary me-1 mb-1">OWASP dasar</span><span class="badge bg-secondary me-1 mb-1">Vulnerability assessment</span><span class="badge bg-secondary me-1 mb-1">Burp Suite dasar</span></p>
+          <p class="mb-1 text-white">🔐 Web Security / Pentest</p>
+          <p class="mb-0"><span class="badge bg-secondary me-1 mb-1">Web Pentest</span><span class="badge bg-secondary me-1 mb-1">Vulnerability Assessment</span><span class="badge bg-secondary me-1 mb-1">OWASP</span><span class="badge bg-secondary me-1 mb-1">Burp Suite</span><span class="badge bg-secondary me-1 mb-1">Reconnaissance</span></p>
         </div>
       </details>
 
       <details class="card border-secondary mt-3" id="hall" open>
         <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Penghargaan &amp; Kontribusi</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • pelaporan kerentanan resmi ke instansi pemerintah</p>
+          <h2 class="card-title h4">Proyek &amp; Kontribusi</h2>
+          <p class="small text-muted-fix mb-0">Pelaporan kerentanan resmi ke instansi pemerintah</p>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
           <div class="table-responsive">
@@ -144,26 +141,10 @@
         </div>
       </details>
 
-      <details class="card border-secondary mt-3" id="temuan">
-        <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Pengalaman Keamanan Web</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • fokus pada perbaikan, tanpa detail sensitif</p>
-        </summary>
-        <div class="card-body border-top border-secondary pt-3">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-secondary"><strong class="text-white">RCE via File Upload</strong><br><span class="small text-muted-fix">Mitigasi: whitelist MIME, rename file, simpan di luar webroot, disable execute.</span></li>
-            <li class="list-group-item border-secondary"><strong class="text-white">XSS (Reflected / Stored)</strong><br><span class="small text-muted-fix">Mitigasi: output encoding, CSP, validasi input.</span></li>
-            <li class="list-group-item border-secondary"><strong class="text-white">Sensitive Key Exposure</strong><br><span class="small text-muted-fix">Mitigasi: env vars, rotate key, bersihkan git history.</span></li>
-            <li class="list-group-item border-secondary"><strong class="text-white">Client-Side Prototype Pollution</strong><br><span class="small text-muted-fix">Mitigasi: sanitasi key __proto__/constructor/prototype.</span></li>
-            <li class="list-group-item border-secondary"><strong class="text-white">PII Exposure</strong><br><span class="small text-muted-fix">Mitigasi: minimasi data, authz check, masking.</span></li>
-          </ul>
-        </div>
-      </details>
-
       <details class="card border-secondary mt-3" id="sertifikat" open>
         <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Sertifikat</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup • klik gambar untuk perbesar 🔍</p>
+          <h2 class="card-title h4">Sertifikasi &amp; Sertifikat</h2>
+          <p class="small text-muted-fix mb-0">Klik gambar untuk perbesar 🔍</p>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
           <div class="row g-3">
@@ -183,14 +164,12 @@
               <p class="small text-muted-fix mb-0">No. SERT.083.BSSN/D2/VVIP/04/2024 • D.I. Yogyakarta Tahap III • Apr 2024</p>
             </div>
           </div>
-          <p class="mt-3 mb-0"><a href="content.md" class="btn btn-outline-light btn-sm">📄 Versi Markdown</a></p>
         </div>
       </details>
 
       <details class="card border-secondary mt-3" id="kontak" open>
         <summary class="card-body">
-          <h2 class="card-title h4 d-inline">Kontak &amp; Karya</h2>
-          <p class="small text-muted-fix mb-0">klik untuk buka/tutup</p>
+          <h2 class="card-title h4">Kontak</h2>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
           <div class="d-flex flex-wrap gap-2">
@@ -200,7 +179,7 @@
             <a href="https://id.linkedin.com/in/imamuddin-al-mustaqim" class="btn btn-primary btn-sm" target="_blank" rel="noopener">LinkedIn</a>
             <a href="mailto:xeamam.hsu@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
           </div>
-          <p class="small mt-3 mb-0 text-muted-fix">Siap magang <strong class="text-white">MagangHub Batch 2 2026</strong>: Staff IT / IT Support / System &amp; Network Administrator / Web Administrator / QA — remote / hybrid, cepat beradaptasi dengan tugas baru.</p>
+          <p class="small mt-3 mb-0 text-muted-fix">Terbuka untuk magang / posisi IT: System Administrator, Web Security Pentester, Backend Developer, IT Support — remote / hybrid, cepat beradaptasi dengan tugas baru.</p>
         </div>
       </details>
 
