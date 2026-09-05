@@ -52,6 +52,11 @@
     #lightbox .lb-close{position:absolute;top:.5rem;right:.5rem;z-index:2}
     .cert-thumb img{transition:transform .2s ease,box-shadow .2s ease}
     .cert-thumb:hover img{transform:scale(1.02);box-shadow:0 0 0 2px #8AB4FF}
+    /* Galeri 1 baris + scroll horizontal */
+    .cert-rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem;-webkit-overflow-scrolling:touch}
+    .cert-rail>div{flex:0 0 80%;max-width:300px;scroll-snap-align:start}
+    @media(min-width:768px){.cert-rail>div{flex:0 0 31%}}
+    .cert-rail img{width:100%;aspect-ratio:10/7;object-fit:cover}
   </style>
 </head>
 <body class="bg-dark">
@@ -154,21 +159,31 @@
           <p class="small text-muted-fix mb-0">Klik gambar untuk perbesar</p>
         </summary>
         <div class="card-body border-top border-secondary pt-3">
-          <div class="row g-3">
-            <div class="col-md-4">
+          <div class="cert-rail">
+            <div>
               <a href="certs/rhcsa.min.jpg" class="cert-thumb" data-pdf="certs/rhcsa.pdf" data-title="RHCSA — Red Hat Certified System Administrator (ID 230-276-685)"><img src="certs/rhcsa.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat RHCSA — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Red Hat Certified System Administrator (RHCSA)</strong></p>
               <p class="small text-muted-fix mb-0">ID 230-276-685 • Des 2023 • <a href="https://www.credly.com/go/fBjsa7n0" target="_blank" rel="noopener">verifikasi ↗</a></p>
             </div>
-            <div class="col-md-4">
+            <div>
               <a href="certs/komdigi.min.jpg" class="cert-thumb" data-pdf="certs/komdigi.pdf" data-title="Sertifikat Apresiasi KOMDIGI-CSIRT (B-1773/SJ.7/DT.02.08/07/2026)"><img src="certs/komdigi.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat Apresiasi Komdigi — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Sertifikat Apresiasi KOMDIGI-CSIRT</strong></p>
               <p class="small text-muted-fix mb-0">No. B-1773/SJ.7/DT.02.08/07/2026 • temuan OS Command Injection • Jul 2026</p>
             </div>
-            <div class="col-md-4">
+            <div>
               <a href="certs/bssn.min.jpg" class="cert-thumb" data-pdf="certs/bssn.pdf" data-title="Piagam Penghargaan BSSN VVIP (SERT.083.BSSN/D2/VVIP/04/2024)"><img src="certs/bssn.min.jpg" class="img-fluid rounded border border-secondary" alt="Piagam Penghargaan BSSN VVIP — klik untuk perbesar"></a>
               <p class="small mt-2 mb-0 text-white"><strong>Piagam Penghargaan BSSN VVIP Program</strong></p>
               <p class="small text-muted-fix mb-0">No. SERT.083.BSSN/D2/VVIP/04/2024 • D.I. Yogyakarta Tahap III • Apr 2024</p>
+            </div>
+            <div>
+              <a href="certs/msib.min.jpg" class="cert-thumb" data-pdf="certs/msib.pdf" data-title="MSIB Batch 5 — Infinite Learning (No. 2085/IL-SIB/I/2024)"><img src="certs/msib.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat MSIB Batch 5 — klik untuk perbesar"></a>
+              <p class="small mt-2 mb-0 text-white"><strong>MSIB Batch 5 — Independent Study Infinite Learning</strong></p>
+              <p class="small text-muted-fix mb-0">No. 2085/IL-SIB/I/2024 • RHCSA · IBM AI &amp; Cybersecurity • Agu–Des 2023</p>
+            </div>
+            <div>
+              <a href="certs/webinar.min.jpg" class="cert-thumb" data-pdf="certs/webinar.png" data-title="Webinar Digital Inovasi HMIF UAD (16 Okt 2024)"><img src="certs/webinar.min.jpg" class="img-fluid rounded border border-secondary" alt="Sertifikat Webinar Digital Inovasi — klik untuk perbesar"></a>
+              <p class="small mt-2 mb-0 text-white"><strong>Webinar Digital Inovasi — HMIF UAD</strong></p>
+              <p class="small text-muted-fix mb-0">Peserta • Strategi Keamanan Data di Era Digital • Okt 2024</p>
             </div>
           </div>
         </div>

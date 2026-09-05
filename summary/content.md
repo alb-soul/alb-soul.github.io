@@ -42,6 +42,8 @@ Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa
 - **RHCSA** — Red Hat Certified System Administrator, ID 230-276-685 (Des 2023) — `certs/rhcsa.pdf` — [verifikasi](https://www.credly.com/go/fBjsa7n0)
 - **KOMDIGI-CSIRT** — Sertifikat Apresiasi No. B-1773/SJ.7/DT.02.08/07/2026, temuan OS Command Injection (Jul 2026) — `certs/komdigi.pdf`
 - **BSSN** — Piagam Penghargaan VVIP No. SERT.083.BSSN/D2/VVIP/04/2024, D.I. Yogyakarta Tahap III (Apr 2024) — `certs/bssn.pdf`
+- **MSIB Batch 5** — Independent Study Infinite Learning No. 2085/IL-SIB/I/2024, RHCSA · IBM AI & Cybersecurity (Agu–Des 2023) — `certs/msib.pdf`
+- **Webinar Digital Inovasi HMIF UAD** — Peserta, Strategi Keamanan Data di Era Digital (Okt 2024) — `certs/webinar.png`
 
 ## Tautan
 
