@@ -7,13 +7,7 @@
 
 ## Tentang
 
-**Informatika (IPK 3.76), Universitas Ahmad Dahlan Yogyakarta** — terbiasa mengelola **server Linux**, **website & database (PHP-MySQL)**, serta **dukungan teknis dan dokumentasi**.
-Berspesialisasi di **pengujian keamanan web (penetration testing)** dan terbiasa melaporkan temuan kerentanan secara resmi ke instansi pemerintah.
-
-- Pendidikan: S1 Informatika UAD Yogyakarta, IPK 3.76
-- Kompetensi utama: administrasi Linux (RHCSA), backend PHP-MySQL & SQL, web security penetration testing & vulnerability assessment
-- Nilai tambah: pemahaman pengujian keamanan web (OWASP) + responsible disclosure ke 9 instansi (BSSN, Komdigi, dll.)
-- Kesiapan: cepat belajar teknologi baru — saat ini mendalami Python/Django
+Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember 2025, tertarik, memahami, dan familiar dengan sistem Linux, System Administrator/Sysadmin (RHCSA), Web Security Pentesting (Web Pentester), Backend Developer (PHP, MySQL), Bug Hunter, Top 10 OWASP, Burp Suite, Command-line Interface (CLI), Bash, Basic Docker. Sekarang juga tertarik dengan hal relevan terkait pengujian aplikasi/sistem seperti Quality Assurance (QA) Tester.
 
 ## Kemampuan
 
