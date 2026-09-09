@@ -13,7 +13,7 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 
 - Administrasi Sistem: Linux Sysadmin (RHCSA), Bash, CLI, SSH, Git, File permission, Basic Docker, Troubleshooting
 - Web & Database: PHP-MySQL, SQL, HTML, Django (Studying)
-- Dukungan IT & Kerja Tim: dokumentasi teknis, Markdown, laporan & komunikasi
+- Dukungan IT & Kerja Tim: dokumentasi teknis, laporan & komunikasi
 - Web Security / Pentest: Web Pentesting, Vulnerability Assessment, Top 10 OWASP, Burp Suite, Reconnaissance
 
 ## Proyek & Kontribusi
@@ -22,8 +22,8 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 |---|---|---|
 | BSSN | ✓ Sertifikat | VVIP Program — SERT.083.BSSN/D2/VVIP/04/2024 |
 | Komdigi | ✓ Sertifikat | Apresiasi CSIRT — B-1773/SJ.7/DT.02.08/07/2026 |
-| Polri | Dilaporkan | Responsible disclosure |
 | PU | ✓ Sertifikat | Apresiasi PU-CSIRT — KP0902/B/Sd1/2026/470 |
+| Polri | Dilaporkan | Responsible disclosure |
 | Kemnaker | Dilaporkan | Responsible disclosure |
 | Kemendikdasmen | Dilaporkan | Responsible disclosure |
 | Kebumen | Dilaporkan | Responsible disclosure |
