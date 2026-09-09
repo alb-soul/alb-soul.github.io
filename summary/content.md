@@ -23,7 +23,7 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 | BSSN | ✓ Sertifikat | VVIP Program — SERT.083.BSSN/D2/VVIP/04/2024 |
 | Komdigi | ✓ Sertifikat | Apresiasi CSIRT — B-1773/SJ.7/DT.02.08/07/2026 |
 | Polri | Dilaporkan | Responsible disclosure |
-| PU | Dilaporkan | Responsible disclosure |
+| PU | ✓ Sertifikat | Apresiasi PU-CSIRT — KP0902/B/Sd1/2026/470 |
 | Kemnaker | Dilaporkan | Responsible disclosure |
 | Kemendikdasmen | Dilaporkan | Responsible disclosure |
 | Kebumen | Dilaporkan | Responsible disclosure |
@@ -38,6 +38,7 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 - **RHCSA** — Red Hat Certified System Administrator, ID 230-276-685 (Des 2023) — `certs/rhcsa.pdf` — [verifikasi](https://www.credly.com/go/fBjsa7n0)
 - **KOMDIGI-CSIRT** — Sertifikat Apresiasi No. B-1773/SJ.7/DT.02.08/07/2026, temuan OS Command Injection (Jul 2026) — `certs/komdigi.pdf`
 - **BSSN** — Piagam Penghargaan VVIP No. SERT.083.BSSN/D2/VVIP/04/2024, D.I. Yogyakarta Tahap III (Apr 2024) — `certs/bssn.pdf`
+- **PU-CSIRT** — Sertifikat Apresiasi No. KP0902/B/Sd1/2026/470, Kementerian Pekerjaan Umum (Sep 2026) — `certs/pu.pdf`
 - **FGA Fundamental Cybersecurity** — Digital Talent Scholarship No. 19510934840-2139/FGA/BLSDM.Komdigi/2025, 10 JP (Agu 2025) — `certs/fga.pdf`
 - **MSIB Batch 5** — Independent Study Infinite Learning No. 2085/IL-SIB/I/2024, RHCSA · IBM AI & Cybersecurity (Agu–Des 2023) — `certs/msib.pdf`
 - **Webinar Digital Inovasi HMIF UAD** — Peserta, Strategi Keamanan Data di Era Digital (Okt 2024) — `certs/webinar.png`
