@@ -35,7 +35,7 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 
 ## Sertifikasi & Sertifikat
 
-- **RHCSA** — Red Hat Certified System Administrator, ID 230-276-685 (Des 2023) — `certs/rhcsa.pdf` — [verifikasi](https://rhtapps.redhat.com/verify)
+- **RHCSA** — Red Hat Certified System Administrator, ID 230-276-685 (Des 2023) — `certs/rhcsa.pdf` — [verifikasi](https://rhtapps.redhat.com/verify?certId=230-276-685)
 - **KOMDIGI-CSIRT** — Sertifikat Apresiasi No. B-1773/SJ.7/DT.02.08/07/2026, temuan OS Command Injection (Jul 2026) — `certs/komdigi.pdf`
 - **BSSN** — Piagam Penghargaan VVIP No. SERT.083.BSSN/D2/VVIP/04/2024, D.I. Yogyakarta Tahap III (Apr 2024) — `certs/bssn.pdf`
 - **PU-CSIRT** — Sertifikat Apresiasi No. KP0902/B/Sd1/2026/470, Kementerian Pekerjaan Umum (Sep 2026) — `certs/pu.pdf`
