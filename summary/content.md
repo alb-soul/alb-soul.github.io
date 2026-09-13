@@ -23,15 +23,12 @@ Fresh Graduate S1 Informatika Universitas Ahmad Dahlan (UAD) Yogyakarta Desember
 | BSSN | ✓ Sertifikat | VVIP Program — SERT.083.BSSN/D2/VVIP/04/2024 |
 | Komdigi | ✓ Sertifikat | Apresiasi CSIRT — B-1773/SJ.7/DT.02.08/07/2026 |
 | PU | ✓ Sertifikat | Apresiasi PU-CSIRT — KP0902/B/Sd1/2026/470 |
-| Polri | Dilaporkan | Responsible disclosure |
-| Kemnaker | Dilaporkan | Responsible disclosure |
-| Kemendikdasmen | Dilaporkan | Responsible disclosure |
-| Kebumen | Dilaporkan | Responsible disclosure |
-| BPS | Dilaporkan | Responsible disclosure |
-| Baliprov | Dilaporkan | Responsible disclosure |
-| Binus Bug Bounty | 3 High diproses | 1 in-Fixing, 2 in-Review |
-| BMKG | Pending | Responsible disclosure — baru dilaporkan, belum diproses |
-| UAD | Tugas proyek kampus | Back-end Developer PHP-MySQL, merancang database — proyek MPTI Sistem Kasir Kedai Susu Sugar.86 |
+| Law Enforcement Agency | Dilaporkan | Responsible disclosure |
+| Indonesian Ministry / State Agency | Dilaporkan | Responsible disclosure |
+| Regional Government Networks | Dilaporkan | Responsible disclosure |
+| Academic Institution Bug Bounty | 3 High in-progress | 3 High vulnerabilities (in-progress) |
+| State Meteorological Agency | Reported | Responsible disclosure (reported) |
+| Universitas Ahmad Dahlan (UAD) | Tugas proyek kampus | Back-end Developer PHP-MySQL, merancang database — proyek MPTI Sistem Kasir Kedai Susu Sugar.86 |
 
 ## Sertifikasi & Sertifikat
 
